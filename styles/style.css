@@ -11,15 +11,24 @@ body {
     font-size: 50px;
 }
 
+.btn {
+    align-self: end !important;
+}
+
 .custom-button {
     margin: 5% 0%;
     background-color: #FFE8D6;
     border: 1px solid #6B705C;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    margin-top: auto;
 }
 
 .custom-button:hover {
     background-color: #A5A58D;
     border-color: #FFE8D6;
+    width: 100%;
 }
 
 .custom-alert {
@@ -79,7 +88,7 @@ body {
     min-height: 70%;
     display: grid;
     grid-template-columns: 15% auto 15%;
-    grid-template-areas: "catalog catalog catalog" "menu order advertisement" ". order advertisement" ". order .";
+    grid-template-areas: "menu order advertisement" ". order advertisement" ". order .";
     gap: 10px;
     margin: 10px 0px;
 }
@@ -110,7 +119,6 @@ body {
 
 .catalog {
     background-color: #5f6359;
-    grid-area: catalog;
 }
 
 .order {
@@ -123,8 +131,10 @@ body {
 .advertisement {
     grid-area: advertisement;
     background-color: #DDBEA9;
-    padding: 0%;
+    padding: 0;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-link {
@@ -141,27 +151,33 @@ body {
 .adv {
     background-color: #FFE8D6;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10% 0%;
+    padding: 10%;
+    margin: 10%;
     float: left;
+    width: 100%;
+    align-self: center;
 }
 
 .custom-a {
     color: #6B705C;
     text-decoration: none;
     font-size: 18px;
+    width: 100%;
 }
 
 .custom-a:hover {
     color: #FFE8D6;
     text-decoration: none;
     font-size: 18px;
+    width: 100%;
 }
 
 .p-adv {
-    margin: 10px;
+    margin: 2% 7%;
     color: #FFE8D6;
     text-align: right;
+    width: 100%;
+    text-align: start;
 }
 
 .custom-cards {
@@ -176,6 +192,24 @@ body {
     width: 30%;
     margin: 1px;
     color: #f9ecec;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.custom-btn {
+    margin-top: auto;
+    background-color: #A5A58D;
+    color: #f9ecec;
+    padding: 5% 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .opacity-20 {
@@ -194,6 +228,7 @@ body {
 
 .cont {
     display: flex;
+    margin-top: 2%;
 }
 
 .cont-h {
@@ -206,11 +241,6 @@ body {
     border-radius: 5px;
 }
 
-.custom-btn {
-    background-color: #A5A58D;
-    color: #f9ecec;
-}
-
 .custom-btn2 {
     background-color: #B7B7 A4;
     border-radius: 5px;
@@ -221,7 +251,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
     padding: 20px;
 }
@@ -231,6 +261,9 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .grid-element img {
@@ -242,11 +275,11 @@ body {
 
 .grid-element h3 {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 .custom-button {
-    margin: 5% 0;
+    margin-top: auto;
     background-color: #FFE8D6;
     border: 1px solid #6B705C;
     color: #6B705C;
@@ -285,6 +318,7 @@ body {
 .navigation ul {
     display: flex;
     list-style: none;
+    align-items: end;
     padding: 0;
     margin: 0;
 }
@@ -297,6 +331,7 @@ body {
     text-decoration: none;
     color: #B7B7A4;
     padding: 5px 10px;
+    text-align: center;
 }
 
 .navigation ul a:hover {
