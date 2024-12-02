@@ -12,17 +12,15 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
     <header>
-        <aside class="catalog">
+        <div class="catalog">
             <a class="logo" href="basic.html">Flowers</a>
             <nav class="navigation">
                 <ul>
                     <li><a href="basic.html">Основная страница</a></li>
-                    <li>
-                        <a href="second.html">Каталог</a></li>
+                    <li><a href="second.html">Каталог</a></li>
                 </ul>
             </nav>
-        </aside>
-
+        </div>
     </header>
 
     <main class="content">
@@ -30,22 +28,23 @@
             <nav class="sidebar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="#img">Спец. предложения</a>
+                        <a class="nav-link" href="#img">Спец. предложения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#cards">Сотрудники</a>
+                        <a class="nav-link" href="#cards">Сотрудники</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#footer">Информация</a>
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Информация</a>
                     </li>
                 </ul>
             </nav>
-
         </aside>
         <aside class="order">
             <h1 style="color: #6B705C;">Специальные предложения для вас:</h1>
             <div id="carouselDemo" class="carousel slide" data-bs-ride="carousel">
-
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1"></button>
@@ -64,7 +63,7 @@
                     <div class="carousel-item">
                         <img src="images/m2.jpg" alt="Котик 2" class="d-block w-100 opacity-20">
                         <div class="carousel-caption d-flex justify-content-center align-items-center">
-                            <div class="text-center">
+                            <div class=" text-center">
                                 <p>ДЕНЬ МАТЕРИ <br>24.11 </p>
                             </div>
                         </div>
@@ -80,18 +79,17 @@
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
 
-
-            <div class="cont">
+            <div id="cards" class="cont">
                 <h1 class="cont-h">Наши цветочные феи</h1>
             </div>
-            <div id="cards" class="custom-cards">
+            <div class="custom-cards">
                 <div class="card">
                     <img class="card-img-top" src="images/f1.jpg" alt="The Great">
                     <div class="card-body">
@@ -99,7 +97,7 @@
                         <p class="card-text">
                             Создает удивительные цветочные композиции, которые заставляют сердце биться чаще.
                         </p>
-                        <a class="btn custom-btn" href="second.html">Заказать</a>
+                        <a class="btn custom-btn" href="second.html">Заказать композицию</a>
                     </div>
                 </div>
 
@@ -110,7 +108,7 @@
                         <p class="card-text">
                             Собирает романтичные букеты, которые говорят больше, чем слова.
                         </p>
-                        <a class="btn custom-btn" href="second.html">Заказать</a>
+                        <a class="btn custom-btn" href="second.html">Заказать композицию</a>
                     </div>
                 </div>
 
@@ -121,19 +119,28 @@
                         <p class="card-text">
                             Воплощает уникальные цветочные шедевры, которые наполняют атмосферу любовью и теплом.
                         </p>
-                        <a class="btn custom-btn" href="second.html">Заказать</a>
+                        <a class="btn custom-btn" href="second.html">Заказать композицию</a>
                     </div>
                 </div>
             </div>
+            <div id="about" class="cont">
+                <h1 class="cont-h">Информация о нас:</h1>
+            </div>
+            <p style="color: #6B705C; font-size: 1em; margin-top: 3%;">
+                Мы — команда профессиональных флористов, создающих уникальные букеты и композиции для любых событий.<br><br>
+                <b>Профессионализм:</b> Опытные флористы, следящие за последними тенденциями.<br><br>
+                <b>Индивидуальный подход:</b> Персонализированные решения для каждого клиента.<br><br>
+                <b>Качество:</b> Используем только свежие и качественные цветы.<br><br>
+                <b>Творчество:</b> Каждая композиция создается с душой и вниманием к деталям.<br><br>
+                <b>Широкий спектр услуг:</b> Оформление мероприятий, свадебные букеты и корпоративные подарки. С нами ваше событие станет незабываемым!
+            </p>
         </aside>
         <aside class="advertisement">
             <div class="adv">
-                <h2 style="color: #6B705C; font-size: 20px; text-align: center;">Поставить зачет просто!</h2>
-                <a href="aaa.html" style="background-image: url('images/mb.jpg');">
-                </a>
+                <h2 style="color: #6B705C; font-size: 20px; text-align: center; width: 100%;">Поставить зачет просто!</h2>
                 <button type="button" class="btn btn-primary custom-button">
-                        <a class="custom-a" href="aaa.html" >нажмите,чтобы поставить зачет </a>
-                    </button>
+                    <a class="custom-a" href="aaa.html" >нажмите, чтобы поставить зачет </a>
+                </button>
             </div>
             <p class="p-adv">Реклама</p>
         </aside>
@@ -145,29 +152,12 @@
                 <h3 class="foot-h3">Контакты</h3>
                 Телефон: +7 (123) 456-789<br> Email: Barnaeva.Marina24@yandex.com<br> Адрес: ул. Флексбоксовна, 123, г. Гридович<br>
             </div>
-            <div class="footer-column">
-                <button type="button" class="btn custom-btn2" data-bs-toggle="collapse" data-bs-target="#demo">
-                        <h3>О нас:</h3>
-                        </button>
-                <div id="demo" class="collapse ">
-                    <p style="color: #6B705C ; font-size: large;"><br><b>Мы — команда профессиональных флористов</b>, создающих уникальные букеты и композиции для любых событий.<br><br>
-
-                        <b>Профессионализм:</b> Опытные флористы, следящие за последними тенденциями.<br><br>
-                        <b>Индивидуальный подход:</b> Персонализированные решения для каждого клиента.<br><br>
-                        <b>Качество:</b> Используем только свежие и качественные цветы.<br><br>
-                        <b>Творчество:</b> Каждая композиция создается с душой и вниманием к деталям.<br><br>
-                        <b>Широкий спектр услуг:</b> Оформление мероприятий, свадебные букеты и корпоративные подарки. С нами ваше событие станет незабываемым!</p>
-                </div>
-                </p>
-            </div>
         </div>
         <div class="footer-column">
             <h3 class="foot-h3">Полезные ссылки</h3>
             <a style="text-decoration: none;" href="basic.html#cards">Сотрудники</a><br>
             <a style="text-decoration: none;" href="second.html">Каталог</a><br>
             <a style="text-decoration: none;" href="#">Основная страница</a><br>
-
-        </div>
         </div>
         <div class="footer-icons">
             <a href="#" class="icon custom-a"><img src="images/what.png" alt="Facebook"></a>
