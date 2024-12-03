@@ -119,6 +119,7 @@ body {
 
 .catalog {
     background-color: #5f6359;
+    position: sticky;
 }
 
 .order {
