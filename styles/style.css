@@ -61,6 +61,7 @@ body {
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    padding-left: 10px;
 }
 
 .footer-column {
@@ -117,14 +118,15 @@ body {
     color: #FFE8D6;
 }
 
-header{
+header {
     display: flex;
     position: sticky;
     top: 0px;
     z-index: 5;
 }
+
 .catalog {
-    width: 100%;    
+    width: 100%;
     background-color: #5f6359;
 }
 
@@ -346,9 +348,20 @@ header{
     border-radius: 5px;
 }
 
+.map {
+    height: 200px;
+    width: 700px;
+    position: relative;
+}
+
 @media (max-width: 1280px) {
     .grid-container {
         grid-template-columns: repeat(3, auto);
+    }
+    .map {
+        height: 200px;
+        width: 400px;
+        position: relative;
     }
 }
 
@@ -373,6 +386,11 @@ header{
     .text-center,
     .cont-h {
         font-size: 30px;
+    }
+    .map {
+        height: 150px;
+        width: 230px;
+        position: relative;
     }
 }
 
@@ -422,6 +440,21 @@ header{
     .navbar .btn {
         display: block;
         width: 100%;
-        margin: 5px 0;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 550px) {
+    .map {
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+    .footer-column {
+        font-size: 80%;
+        margin: 0px;
+    }
+    .navigation ul {
+        flex-direction: column;
     }
 }
