@@ -52,7 +52,6 @@ body {
 
 .custom-footer {
     color: #6c757d;
-    box-sizing: border-box;
     text-align: center;
     width: 100%;
 }
@@ -72,13 +71,12 @@ body {
 
 .footer-icons {
     margin-top: 20px;
-    display: flex;
-    align-items: flex-end;
 }
 
 .footer-icons img {
     width: 24px;
     height: 24px;
+    align-items: flex-start;
 }
 
 .icon {
@@ -411,13 +409,6 @@ header {
         color: #5f6359;
         font-size: 80%;
         margin-bottom: 10px;
-    }
-    .footer-icons {
-        display: flex;
-        align-items: flex-start;
-    }
-    .footer-icons img {
-        display: none;
     }
     .text-center,
     .cont-h {
